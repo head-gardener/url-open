@@ -82,7 +82,7 @@ M.find_first_url_in_line = function(user_opts, text, start_pos)
 		M.find_first_matching_url(text, patterns_module.PATTERNS, start_pos)
 
 	local extra_start_found, extra_end_found, extra_url_found =
-		M.find_first_matching_url(text, user_opts.extra_patterns, start_pos, start_found)
+		M.find_first_matching_url(text, user_opts.extra_patterns, start_pos, end_found)
 
 	if extra_start_found then
 		start_found, end_found, url_found = extra_start_found, extra_end_found, extra_url_found
